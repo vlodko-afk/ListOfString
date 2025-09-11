@@ -1,0 +1,9 @@
+﻿  pch.cpp
+  test.cpp
+D:\SoftServe\Task1\Task1\StringList.cpp(76,5): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\SoftServe\Task1\Task1\StringList.cpp(149,24): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+D:\SoftServe\Task1\Task1\StringList.cpp(151,21): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\SoftServe\Task1\Task1\StringList.cpp(157,9): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\SoftServe\Task1\Task1\StringList.cpp(161,9): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\SoftServe\Task1\Task1\StringList.cpp(164,9): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  TestListOfStrings.vcxproj -> D:\SoftServe\Task1\x64\Debug\TestListOfStrings.exe

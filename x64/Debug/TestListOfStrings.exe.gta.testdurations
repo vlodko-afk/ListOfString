@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GtaTestDurations xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Executable>D:\SoftServe\Task1\x64\Debug\TestListOfStrings.exe</Executable>
+  <TestDurations>
+    <TestDuration Test="TestCaseName.TestName" Duration="1" />
+    <TestDuration Test="Test1.TestStringListAdd" Duration="1" />
+    <TestDuration Test="Test2.TestString" Duration="1" />
+    <TestDuration Test="Test2.TestStringSize" Duration="1" />
+  </TestDurations>
+</GtaTestDurations>

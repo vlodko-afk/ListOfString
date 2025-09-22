@@ -8,6 +8,7 @@
 /* Initializes list */
 void StringListInit(char*** list) {
     //[size][capacity] <- list -> [ref->[string], ref->[string]]
+    if (list == nullptr) return;
     char** temp = (char**)malloc(sizeof(char*) * 3);
     if (temp != nullptr) {
         temp[0] = (char*)(intptr_t)0;  // size = 0
@@ -45,7 +46,7 @@ void StringListDestroy(char*** list) {
 
 /* Inserts value at the end of the list. */
 void StringListAdd(char*** list, const char* str) {
-    if (str == nullptr) return;
+    if (str == nullptr || list == nullptr) return;
 
     if (*list == nullptr) {
         StringListInit(list);
@@ -113,6 +114,7 @@ int StringListIndexOf(char** list, const char* str) {
 
 /* Removes duplicate entries from the list. */
 void StringListRemoveDuplicates(char** list) {
+    if (list == nullptr) return;
     char** exsist_word;
     StringListInit(&exsist_word);
     int size = StringListSize(list);
@@ -135,6 +137,9 @@ void StringListRemoveDuplicates(char** list) {
 
 /* Replaces every occurrence of the before, in each of the string lists's strings, with after. */
 void StringListReplaceInStrings(char** list, const char* before, const char* after) {
+    
+    if (!list || !before || !after) return;
+
     int size = StringListSize(list);
 
     for (int i = 0; i < size; ++i) {

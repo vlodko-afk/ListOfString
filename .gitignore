@@ -1,12 +1,36 @@
 # Prerequisites
 *.d
-.vs/
+
 # Compiled Object files
 *.slo
 *.lo
 *.o
 *.obj
 
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Bb]uild/
+[Oo]bj/
+
+# Precompiled Headers
+*.pch
+*.ipch
+
+# Other
+*.log
+*.tlog
+*.idb
+*.pdb
 # Precompiled Headers
 *.gch
 *.pch

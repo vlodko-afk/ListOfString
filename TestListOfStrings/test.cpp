@@ -1,7 +1,7 @@
 #include "pch.h"
 #include "../Task1/StringList.cpp"
 
-TEST(Test1, TestStringListAdd) {
+TEST(TestAdd, StringAdd) {
     char** List;
     StringListInit(&List);
 
@@ -67,7 +67,6 @@ TEST(TestRemove, RemoveAllOccurrences) {
 
     ASSERT_EQ(StringListSize(List), 5);
 
-    // Переконуємося, що всі "x" будуть видалені
     StringListRemove(List, "x");
     EXPECT_EQ(StringListSize(List), 2);
     EXPECT_STREQ(List[0], "y");
@@ -89,7 +88,7 @@ TEST(TestRemove, RemoveLastElement) {
 
     StringListDestroy(&List);
 }
-TEST(Test3, TestStringSize) {
+TEST(TestSize, TestStringSize) {
     char** List;
     // test size Nullptr list;
     StringListInit(&List);

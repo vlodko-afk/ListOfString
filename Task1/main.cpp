@@ -10,6 +10,8 @@ int main() {
     StringListAdd(&List, "close");
     StringListAdd(&List, "baby");
     StringListAdd(&List, "antony");
+    char** mylist = nullptr;
+    StringListAdd(nullptr, "hello");  // передали nullptr замість valid char** -> crash
 
     StringListRemoveDuplicates(List);
     StringListSort(List);

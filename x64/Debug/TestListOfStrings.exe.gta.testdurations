@@ -27,5 +27,8 @@
     <TestDuration Test="TestReplaceInStrings.MultipleOccurrencesInDifferentStrings" Duration="1" />
     <TestDuration Test="TestSort.EmptyListOrNull" Duration="1" />
     <TestDuration Test="TestSort.ReverseOrder" Duration="1" />
+    <TestDuration Test="TestAdd.TestStringListAdd" Duration="1" />
+    <TestDuration Test="TestSize.TestStringSize" Duration="1" />
+    <TestDuration Test="TestAdd.StringAdd" Duration="1" />
   </TestDurations>
 </GtaTestDurations>

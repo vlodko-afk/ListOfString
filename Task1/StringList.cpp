@@ -34,7 +34,7 @@ int StringListCapacity(char** list) {
 
 /* Destroy list and set pointer to NULL. */
 void StringListDestroy(char*** list) {
-    if (*list != nullptr) {
+    if (list && *list != nullptr) {
         int size = StringListSize(*list);
         for (int i = 0; i < size; ++i) {
             free((*list)[i]);
@@ -114,7 +114,6 @@ int StringListIndexOf(char** list, const char* str) {
 
 /* Removes duplicate entries from the list. */
 void StringListRemoveDuplicates(char** list) {
-    if (list == nullptr) return;
     char** exsist_word;
     StringListInit(&exsist_word);
     int size = StringListSize(list);
@@ -137,9 +136,6 @@ void StringListRemoveDuplicates(char** list) {
 
 /* Replaces every occurrence of the before, in each of the string lists's strings, with after. */
 void StringListReplaceInStrings(char** list, const char* before, const char* after) {
-    
-    if (!list || !before || !after) return;
-
     int size = StringListSize(list);
 
     for (int i = 0; i < size; ++i) {

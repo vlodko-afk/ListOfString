@@ -21,6 +21,9 @@ x64/
 x86/
 [Bb]uild/
 [Oo]bj/
+x64/
+*.vcxproj
+*.vcxproj.user
 
 # Precompiled Headers
 *.pch
